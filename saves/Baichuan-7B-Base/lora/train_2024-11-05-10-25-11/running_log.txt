@@ -1,0 +1,144 @@
+[WARNING|2024-11-05 10:33:57] logging.py:162 >> `ddp_find_unused_parameters` needs to be set as False for LoRA in DDP training.
+
+[INFO|2024-11-05 10:33:57] parser.py:355 >> Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: True, compute dtype: torch.float16
+
+[INFO|2024-11-05 10:33:57] parser.py:355 >> Process rank: 1, device: cuda:1, n_gpu: 1, distributed training: True, compute dtype: torch.float16
+
+[INFO|2024-11-05 10:33:57] configuration_utils.py:679 >> loading configuration file config.json from cache at /home/huan/.cache/huggingface/hub/models--baichuan-inc--Baichuan-7B/snapshots/5d86e56a58fe4a5b3292cd9bb7468afef6f93eab/config.json
+
+[INFO|2024-11-05 10:33:58] configuration_utils.py:679 >> loading configuration file config.json from cache at /home/huan/.cache/huggingface/hub/models--baichuan-inc--Baichuan-7B/snapshots/5d86e56a58fe4a5b3292cd9bb7468afef6f93eab/config.json
+
+[INFO|2024-11-05 10:33:58] configuration_utils.py:746 >> Model config BaiChuanConfig {
+  "_name_or_path": "baichuan-inc/Baichuan-7B",
+  "architectures": [
+    "BaiChuanForCausalLM"
+  ],
+  "auto_map": {
+    "AutoConfig": "baichuan-inc/Baichuan-7B--configuration_baichuan.BaiChuanConfig",
+    "AutoModelForCausalLM": "baichuan-inc/Baichuan-7B--modeling_baichuan.BaiChuanForCausalLM"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_position_embeddings": 4096,
+  "model_type": "baichuan",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "pad_token_id": 0,
+  "rms_norm_eps": 1e-06,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 64000
+}
+
+
+[INFO|2024-11-05 10:33:59] tokenization_utils_base.py:2211 >> loading file tokenizer.model from cache at /home/huan/.cache/huggingface/hub/models--baichuan-inc--Baichuan-7B/snapshots/5d86e56a58fe4a5b3292cd9bb7468afef6f93eab/tokenizer.model
+
+[INFO|2024-11-05 10:33:59] tokenization_utils_base.py:2211 >> loading file added_tokens.json from cache at None
+
+[INFO|2024-11-05 10:33:59] tokenization_utils_base.py:2211 >> loading file special_tokens_map.json from cache at /home/huan/.cache/huggingface/hub/models--baichuan-inc--Baichuan-7B/snapshots/5d86e56a58fe4a5b3292cd9bb7468afef6f93eab/special_tokens_map.json
+
+[INFO|2024-11-05 10:33:59] tokenization_utils_base.py:2211 >> loading file tokenizer_config.json from cache at /home/huan/.cache/huggingface/hub/models--baichuan-inc--Baichuan-7B/snapshots/5d86e56a58fe4a5b3292cd9bb7468afef6f93eab/tokenizer_config.json
+
+[INFO|2024-11-05 10:33:59] tokenization_utils_base.py:2211 >> loading file tokenizer.json from cache at None
+
+[INFO|2024-11-05 10:33:59] configuration_utils.py:679 >> loading configuration file config.json from cache at /home/huan/.cache/huggingface/hub/models--baichuan-inc--Baichuan-7B/snapshots/5d86e56a58fe4a5b3292cd9bb7468afef6f93eab/config.json
+
+[INFO|2024-11-05 10:33:59] configuration_utils.py:679 >> loading configuration file config.json from cache at /home/huan/.cache/huggingface/hub/models--baichuan-inc--Baichuan-7B/snapshots/5d86e56a58fe4a5b3292cd9bb7468afef6f93eab/config.json
+
+[INFO|2024-11-05 10:33:59] configuration_utils.py:746 >> Model config BaiChuanConfig {
+  "_name_or_path": "baichuan-inc/Baichuan-7B",
+  "architectures": [
+    "BaiChuanForCausalLM"
+  ],
+  "auto_map": {
+    "AutoConfig": "baichuan-inc/Baichuan-7B--configuration_baichuan.BaiChuanConfig",
+    "AutoModelForCausalLM": "baichuan-inc/Baichuan-7B--modeling_baichuan.BaiChuanForCausalLM"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_position_embeddings": 4096,
+  "model_type": "baichuan",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "pad_token_id": 0,
+  "rms_norm_eps": 1e-06,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 64000
+}
+
+
+[INFO|2024-11-05 10:33:59] tokenization_utils_base.py:2211 >> loading file tokenizer.model from cache at /home/huan/.cache/huggingface/hub/models--baichuan-inc--Baichuan-7B/snapshots/5d86e56a58fe4a5b3292cd9bb7468afef6f93eab/tokenizer.model
+
+[INFO|2024-11-05 10:33:59] tokenization_utils_base.py:2211 >> loading file added_tokens.json from cache at None
+
+[INFO|2024-11-05 10:33:59] tokenization_utils_base.py:2211 >> loading file special_tokens_map.json from cache at /home/huan/.cache/huggingface/hub/models--baichuan-inc--Baichuan-7B/snapshots/5d86e56a58fe4a5b3292cd9bb7468afef6f93eab/special_tokens_map.json
+
+[INFO|2024-11-05 10:33:59] tokenization_utils_base.py:2211 >> loading file tokenizer_config.json from cache at /home/huan/.cache/huggingface/hub/models--baichuan-inc--Baichuan-7B/snapshots/5d86e56a58fe4a5b3292cd9bb7468afef6f93eab/tokenizer_config.json
+
+[INFO|2024-11-05 10:33:59] tokenization_utils_base.py:2211 >> loading file tokenizer.json from cache at None
+
+[INFO|2024-11-05 10:34:00] logging.py:157 >> Add pad token: </s>
+
+[INFO|2024-11-05 10:34:00] logging.py:157 >> Loading dataset dafny_train113_alpaca.json...
+
+[INFO|2024-11-05 10:34:01] configuration_utils.py:679 >> loading configuration file config.json from cache at /home/huan/.cache/huggingface/hub/models--baichuan-inc--Baichuan-7B/snapshots/5d86e56a58fe4a5b3292cd9bb7468afef6f93eab/config.json
+
+[INFO|2024-11-05 10:34:02] configuration_utils.py:679 >> loading configuration file config.json from cache at /home/huan/.cache/huggingface/hub/models--baichuan-inc--Baichuan-7B/snapshots/5d86e56a58fe4a5b3292cd9bb7468afef6f93eab/config.json
+
+[INFO|2024-11-05 10:34:02] configuration_utils.py:746 >> Model config BaiChuanConfig {
+  "_name_or_path": "baichuan-inc/Baichuan-7B",
+  "architectures": [
+    "BaiChuanForCausalLM"
+  ],
+  "auto_map": {
+    "AutoConfig": "baichuan-inc/Baichuan-7B--configuration_baichuan.BaiChuanConfig",
+    "AutoModelForCausalLM": "baichuan-inc/Baichuan-7B--modeling_baichuan.BaiChuanForCausalLM"
+  },
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_position_embeddings": 4096,
+  "model_type": "baichuan",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "pad_token_id": 0,
+  "rms_norm_eps": 1e-06,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 64000
+}
+
+
+[INFO|2024-11-05 10:39:52] modeling_utils.py:3937 >> loading weights file pytorch_model.bin from cache at /home/huan/.cache/huggingface/hub/models--baichuan-inc--Baichuan-7B/snapshots/5d86e56a58fe4a5b3292cd9bb7468afef6f93eab/pytorch_model.bin
+
+[INFO|2024-11-05 10:39:52] modeling_utils.py:1670 >> Instantiating BaiChuanForCausalLM model under default dtype torch.float16.
+
+[INFO|2024-11-05 10:39:52] configuration_utils.py:1096 >> Generate config GenerationConfig {
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "pad_token_id": 0
+}
+
+
+[INFO|2024-11-05 10:39:52] safetensors_conversion.py:61 >> Attempting to create safetensors variant
+
+[INFO|2024-11-05 10:39:52] safetensors_conversion.py:24 >> Attempting to convert .bin model on the fly to safetensors.
+

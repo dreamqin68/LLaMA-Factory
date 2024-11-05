@@ -1,0 +1,151 @@
+[WARNING|2024-11-05 10:52:00] logging.py:162 >> `ddp_find_unused_parameters` needs to be set as False for LoRA in DDP training.
+
+[INFO|2024-11-05 10:52:00] parser.py:355 >> Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: True, compute dtype: torch.bfloat16
+
+[INFO|2024-11-05 10:52:00] parser.py:355 >> Process rank: 1, device: cuda:1, n_gpu: 1, distributed training: True, compute dtype: torch.bfloat16
+
+[INFO|2024-11-05 10:52:00] configuration_utils.py:679 >> loading configuration file config.json from cache at /home/huan/.cache/huggingface/hub/models--huggyllama--llama-7b/snapshots/4782ad278652c7c71b72204d462d6d01eaaf7549/config.json
+
+[INFO|2024-11-05 10:52:00] configuration_utils.py:746 >> Model config LlamaConfig {
+  "_name_or_path": "huggyllama/llama-7b",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_position_embeddings": 2048,
+  "max_sequence_length": 2048,
+  "mlp_bias": false,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 0,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 10000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float16",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32000
+}
+
+
+[INFO|2024-11-05 10:52:00] tokenization_utils_base.py:2211 >> loading file tokenizer.model from cache at /home/huan/.cache/huggingface/hub/models--huggyllama--llama-7b/snapshots/4782ad278652c7c71b72204d462d6d01eaaf7549/tokenizer.model
+
+[INFO|2024-11-05 10:52:00] tokenization_utils_base.py:2211 >> loading file tokenizer.json from cache at /home/huan/.cache/huggingface/hub/models--huggyllama--llama-7b/snapshots/4782ad278652c7c71b72204d462d6d01eaaf7549/tokenizer.json
+
+[INFO|2024-11-05 10:52:00] tokenization_utils_base.py:2211 >> loading file added_tokens.json from cache at None
+
+[INFO|2024-11-05 10:52:00] tokenization_utils_base.py:2211 >> loading file special_tokens_map.json from cache at /home/huan/.cache/huggingface/hub/models--huggyllama--llama-7b/snapshots/4782ad278652c7c71b72204d462d6d01eaaf7549/special_tokens_map.json
+
+[INFO|2024-11-05 10:52:00] tokenization_utils_base.py:2211 >> loading file tokenizer_config.json from cache at /home/huan/.cache/huggingface/hub/models--huggyllama--llama-7b/snapshots/4782ad278652c7c71b72204d462d6d01eaaf7549/tokenizer_config.json
+
+[WARNING|2024-11-05 10:52:00] logging.py:168 >> You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama_fast.LlamaTokenizerFast'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565 - if you loaded a llama tokenizer from a GGUF file you can ignore this message.
+
+[INFO|2024-11-05 10:52:00] configuration_utils.py:679 >> loading configuration file config.json from cache at /home/huan/.cache/huggingface/hub/models--huggyllama--llama-7b/snapshots/4782ad278652c7c71b72204d462d6d01eaaf7549/config.json
+
+[INFO|2024-11-05 10:52:00] configuration_utils.py:746 >> Model config LlamaConfig {
+  "_name_or_path": "huggyllama/llama-7b",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_position_embeddings": 2048,
+  "max_sequence_length": 2048,
+  "mlp_bias": false,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 0,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 10000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float16",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32000
+}
+
+
+[INFO|2024-11-05 10:52:00] tokenization_utils_base.py:2211 >> loading file tokenizer.model from cache at /home/huan/.cache/huggingface/hub/models--huggyllama--llama-7b/snapshots/4782ad278652c7c71b72204d462d6d01eaaf7549/tokenizer.model
+
+[INFO|2024-11-05 10:52:00] tokenization_utils_base.py:2211 >> loading file tokenizer.json from cache at /home/huan/.cache/huggingface/hub/models--huggyllama--llama-7b/snapshots/4782ad278652c7c71b72204d462d6d01eaaf7549/tokenizer.json
+
+[INFO|2024-11-05 10:52:00] tokenization_utils_base.py:2211 >> loading file added_tokens.json from cache at None
+
+[INFO|2024-11-05 10:52:00] tokenization_utils_base.py:2211 >> loading file special_tokens_map.json from cache at /home/huan/.cache/huggingface/hub/models--huggyllama--llama-7b/snapshots/4782ad278652c7c71b72204d462d6d01eaaf7549/special_tokens_map.json
+
+[INFO|2024-11-05 10:52:00] tokenization_utils_base.py:2211 >> loading file tokenizer_config.json from cache at /home/huan/.cache/huggingface/hub/models--huggyllama--llama-7b/snapshots/4782ad278652c7c71b72204d462d6d01eaaf7549/tokenizer_config.json
+
+[INFO|2024-11-05 10:52:01] logging.py:157 >> Add pad token: </s>
+
+[INFO|2024-11-05 10:52:01] logging.py:157 >> Loading dataset dafny_train113_alpaca.json...
+
+[INFO|2024-11-05 10:52:02] configuration_utils.py:679 >> loading configuration file config.json from cache at /home/huan/.cache/huggingface/hub/models--huggyllama--llama-7b/snapshots/4782ad278652c7c71b72204d462d6d01eaaf7549/config.json
+
+[INFO|2024-11-05 10:52:02] configuration_utils.py:746 >> Model config LlamaConfig {
+  "_name_or_path": "huggyllama/llama-7b",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_position_embeddings": 2048,
+  "max_sequence_length": 2048,
+  "mlp_bias": false,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 0,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 10000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float16",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 32000
+}
+
+
+[INFO|2024-11-05 10:52:02] modeling_utils.py:3937 >> loading weights file model.safetensors from cache at /home/huan/.cache/huggingface/hub/models--huggyllama--llama-7b/snapshots/4782ad278652c7c71b72204d462d6d01eaaf7549/model.safetensors.index.json
+
+[INFO|2024-11-05 10:52:02] modeling_utils.py:1670 >> Instantiating LlamaForCausalLM model under default dtype torch.bfloat16.
+
+[INFO|2024-11-05 10:52:02] configuration_utils.py:1096 >> Generate config GenerationConfig {
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "pad_token_id": 0
+}
+
+

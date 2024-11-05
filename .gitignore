@@ -163,8 +163,8 @@ cython_debug/
 ms_cache/
 hf_cache/
 om_cache/
-cache/
+# cache/
 config/
-saves/
+# saves/
 output/
 wandb/

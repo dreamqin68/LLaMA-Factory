@@ -1,0 +1,273 @@
+[WARNING|2024-11-05 12:12:10] logging.py:162 >> `ddp_find_unused_parameters` needs to be set as False for LoRA in DDP training.
+
+[INFO|2024-11-05 12:12:10] parser.py:355 >> Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: True, compute dtype: torch.bfloat16
+
+[INFO|2024-11-05 12:12:10] parser.py:355 >> Process rank: 1, device: cuda:1, n_gpu: 1, distributed training: True, compute dtype: torch.bfloat16
+
+[INFO|2024-11-05 12:12:10] configuration_utils.py:679 >> loading configuration file config.json from cache at /home/huan/.cache/huggingface/hub/models--bigscience--bloom-560m/snapshots/ac2ae5fab2ce3f9f40dc79b5ca9f637430d24971/config.json
+
+[INFO|2024-11-05 12:12:10] configuration_utils.py:746 >> Model config BloomConfig {
+  "_name_or_path": "bigscience/bloom-560m",
+  "apply_residual_connection_post_layernorm": false,
+  "architectures": [
+    "BloomForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "attention_softmax_in_fp32": true,
+  "bias_dropout_fusion": true,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_dropout": 0.0,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "layer_norm_epsilon": 1e-05,
+  "masked_softmax_fusion": true,
+  "model_type": "bloom",
+  "n_head": 16,
+  "n_inner": null,
+  "n_layer": 24,
+  "offset_alibi": 100,
+  "pad_token_id": 3,
+  "pretraining_tp": 1,
+  "skip_bias_add": true,
+  "skip_bias_add_qkv": false,
+  "slow_but_exact": false,
+  "transformers_version": "4.46.1",
+  "unk_token_id": 0,
+  "use_cache": true,
+  "vocab_size": 250880
+}
+
+
+[INFO|2024-11-05 12:12:10] tokenization_utils_base.py:2211 >> loading file tokenizer.json from cache at /home/huan/.cache/huggingface/hub/models--bigscience--bloom-560m/snapshots/ac2ae5fab2ce3f9f40dc79b5ca9f637430d24971/tokenizer.json
+
+[INFO|2024-11-05 12:12:10] tokenization_utils_base.py:2211 >> loading file added_tokens.json from cache at None
+
+[INFO|2024-11-05 12:12:10] tokenization_utils_base.py:2211 >> loading file special_tokens_map.json from cache at /home/huan/.cache/huggingface/hub/models--bigscience--bloom-560m/snapshots/ac2ae5fab2ce3f9f40dc79b5ca9f637430d24971/special_tokens_map.json
+
+[INFO|2024-11-05 12:12:10] tokenization_utils_base.py:2211 >> loading file tokenizer_config.json from cache at /home/huan/.cache/huggingface/hub/models--bigscience--bloom-560m/snapshots/ac2ae5fab2ce3f9f40dc79b5ca9f637430d24971/tokenizer_config.json
+
+[INFO|2024-11-05 12:12:11] configuration_utils.py:679 >> loading configuration file config.json from cache at /home/huan/.cache/huggingface/hub/models--bigscience--bloom-560m/snapshots/ac2ae5fab2ce3f9f40dc79b5ca9f637430d24971/config.json
+
+[INFO|2024-11-05 12:12:11] configuration_utils.py:746 >> Model config BloomConfig {
+  "_name_or_path": "bigscience/bloom-560m",
+  "apply_residual_connection_post_layernorm": false,
+  "architectures": [
+    "BloomForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "attention_softmax_in_fp32": true,
+  "bias_dropout_fusion": true,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_dropout": 0.0,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "layer_norm_epsilon": 1e-05,
+  "masked_softmax_fusion": true,
+  "model_type": "bloom",
+  "n_head": 16,
+  "n_inner": null,
+  "n_layer": 24,
+  "offset_alibi": 100,
+  "pad_token_id": 3,
+  "pretraining_tp": 1,
+  "skip_bias_add": true,
+  "skip_bias_add_qkv": false,
+  "slow_but_exact": false,
+  "transformers_version": "4.46.1",
+  "unk_token_id": 0,
+  "use_cache": true,
+  "vocab_size": 250880
+}
+
+
+[INFO|2024-11-05 12:12:11] tokenization_utils_base.py:2211 >> loading file tokenizer.json from cache at /home/huan/.cache/huggingface/hub/models--bigscience--bloom-560m/snapshots/ac2ae5fab2ce3f9f40dc79b5ca9f637430d24971/tokenizer.json
+
+[INFO|2024-11-05 12:12:11] tokenization_utils_base.py:2211 >> loading file added_tokens.json from cache at None
+
+[INFO|2024-11-05 12:12:11] tokenization_utils_base.py:2211 >> loading file special_tokens_map.json from cache at /home/huan/.cache/huggingface/hub/models--bigscience--bloom-560m/snapshots/ac2ae5fab2ce3f9f40dc79b5ca9f637430d24971/special_tokens_map.json
+
+[INFO|2024-11-05 12:12:11] tokenization_utils_base.py:2211 >> loading file tokenizer_config.json from cache at /home/huan/.cache/huggingface/hub/models--bigscience--bloom-560m/snapshots/ac2ae5fab2ce3f9f40dc79b5ca9f637430d24971/tokenizer_config.json
+
+[INFO|2024-11-05 12:12:12] logging.py:157 >> Loading dataset dafny_train113_alpaca.json...
+
+[INFO|2024-11-05 12:12:17] configuration_utils.py:679 >> loading configuration file config.json from cache at /home/huan/.cache/huggingface/hub/models--bigscience--bloom-560m/snapshots/ac2ae5fab2ce3f9f40dc79b5ca9f637430d24971/config.json
+
+[INFO|2024-11-05 12:12:17] configuration_utils.py:746 >> Model config BloomConfig {
+  "_name_or_path": "bigscience/bloom-560m",
+  "apply_residual_connection_post_layernorm": false,
+  "architectures": [
+    "BloomForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "attention_softmax_in_fp32": true,
+  "bias_dropout_fusion": true,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_dropout": 0.0,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "layer_norm_epsilon": 1e-05,
+  "masked_softmax_fusion": true,
+  "model_type": "bloom",
+  "n_head": 16,
+  "n_inner": null,
+  "n_layer": 24,
+  "offset_alibi": 100,
+  "pad_token_id": 3,
+  "pretraining_tp": 1,
+  "skip_bias_add": true,
+  "skip_bias_add_qkv": false,
+  "slow_but_exact": false,
+  "transformers_version": "4.46.1",
+  "unk_token_id": 0,
+  "use_cache": true,
+  "vocab_size": 250880
+}
+
+
+[INFO|2024-11-05 12:12:17] modeling_utils.py:3937 >> loading weights file model.safetensors from cache at /home/huan/.cache/huggingface/hub/models--bigscience--bloom-560m/snapshots/ac2ae5fab2ce3f9f40dc79b5ca9f637430d24971/model.safetensors
+
+[INFO|2024-11-05 12:12:18] modeling_utils.py:1670 >> Instantiating BloomForCausalLM model under default dtype torch.bfloat16.
+
+[INFO|2024-11-05 12:12:18] configuration_utils.py:1096 >> Generate config GenerationConfig {
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "pad_token_id": 3
+}
+
+
+[INFO|2024-11-05 12:12:19] modeling_utils.py:4800 >> All model checkpoint weights were used when initializing BloomForCausalLM.
+
+
+[INFO|2024-11-05 12:12:19] modeling_utils.py:4808 >> All the weights of BloomForCausalLM were initialized from the model checkpoint at bigscience/bloom-560m.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use BloomForCausalLM for predictions without further training.
+
+[INFO|2024-11-05 12:12:19] modeling_utils.py:4272 >> Generation config file not found, using a generation config created from the model config.
+
+[INFO|2024-11-05 12:12:19] logging.py:157 >> Gradient checkpointing enabled.
+
+[INFO|2024-11-05 12:12:19] logging.py:157 >> Using vanilla attention implementation.
+
+[INFO|2024-11-05 12:12:19] logging.py:157 >> Upcasting trainable params to float32.
+
+[INFO|2024-11-05 12:12:19] logging.py:157 >> Fine-tuning method: LoRA
+
+[INFO|2024-11-05 12:12:19] logging.py:157 >> Found linear modules: dense_4h_to_h,query_key_value,dense,dense_h_to_4h
+
+[INFO|2024-11-05 12:12:19] logging.py:157 >> trainable params: 3,145,728 || all params: 562,360,320 || trainable%: 0.5594
+
+[INFO|2024-11-05 12:12:19] trainer.py:698 >> Using auto half precision backend
+
+[INFO|2024-11-05 12:12:20] trainer.py:2313 >> ***** Running training *****
+
+[INFO|2024-11-05 12:12:20] trainer.py:2314 >>   Num examples = 113
+
+[INFO|2024-11-05 12:12:20] trainer.py:2315 >>   Num Epochs = 3
+
+[INFO|2024-11-05 12:12:20] trainer.py:2316 >>   Instantaneous batch size per device = 2
+
+[INFO|2024-11-05 12:12:20] trainer.py:2319 >>   Total train batch size (w. parallel, distributed & accumulation) = 32
+
+[INFO|2024-11-05 12:12:20] trainer.py:2320 >>   Gradient Accumulation steps = 8
+
+[INFO|2024-11-05 12:12:20] trainer.py:2321 >>   Total optimization steps = 9
+
+[INFO|2024-11-05 12:12:20] trainer.py:2322 >>   Number of trainable parameters = 3,145,728
+
+[INFO|2024-11-05 12:13:10] logging.py:157 >> {'loss': 1.7504, 'learning_rate': 2.0659e-05, 'epoch': 1.52}
+
+[INFO|2024-11-05 12:13:48] trainer.py:3801 >> Saving model checkpoint to saves/BLOOM-560M/lora/train_2024-11-05-12-11-37/checkpoint-9
+
+[INFO|2024-11-05 12:13:49] configuration_utils.py:679 >> loading configuration file config.json from cache at /home/huan/.cache/huggingface/hub/models--bigscience--bloom-560m/snapshots/ac2ae5fab2ce3f9f40dc79b5ca9f637430d24971/config.json
+
+[INFO|2024-11-05 12:13:49] configuration_utils.py:746 >> Model config BloomConfig {
+  "apply_residual_connection_post_layernorm": false,
+  "architectures": [
+    "BloomForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "attention_softmax_in_fp32": true,
+  "bias_dropout_fusion": true,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_dropout": 0.0,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "layer_norm_epsilon": 1e-05,
+  "masked_softmax_fusion": true,
+  "model_type": "bloom",
+  "n_head": 16,
+  "n_inner": null,
+  "n_layer": 24,
+  "offset_alibi": 100,
+  "pad_token_id": 3,
+  "pretraining_tp": 1,
+  "skip_bias_add": true,
+  "skip_bias_add_qkv": false,
+  "slow_but_exact": false,
+  "transformers_version": "4.46.1",
+  "unk_token_id": 0,
+  "use_cache": true,
+  "vocab_size": 250880
+}
+
+
+[INFO|2024-11-05 12:13:49] tokenization_utils_base.py:2646 >> tokenizer config file saved in saves/BLOOM-560M/lora/train_2024-11-05-12-11-37/checkpoint-9/tokenizer_config.json
+
+[INFO|2024-11-05 12:13:49] tokenization_utils_base.py:2655 >> Special tokens file saved in saves/BLOOM-560M/lora/train_2024-11-05-12-11-37/checkpoint-9/special_tokens_map.json
+
+[INFO|2024-11-05 12:13:49] trainer.py:2584 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+
+[INFO|2024-11-05 12:13:49] trainer.py:3801 >> Saving model checkpoint to saves/BLOOM-560M/lora/train_2024-11-05-12-11-37
+
+[INFO|2024-11-05 12:13:49] configuration_utils.py:679 >> loading configuration file config.json from cache at /home/huan/.cache/huggingface/hub/models--bigscience--bloom-560m/snapshots/ac2ae5fab2ce3f9f40dc79b5ca9f637430d24971/config.json
+
+[INFO|2024-11-05 12:13:49] configuration_utils.py:746 >> Model config BloomConfig {
+  "apply_residual_connection_post_layernorm": false,
+  "architectures": [
+    "BloomForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "attention_softmax_in_fp32": true,
+  "bias_dropout_fusion": true,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_dropout": 0.0,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "layer_norm_epsilon": 1e-05,
+  "masked_softmax_fusion": true,
+  "model_type": "bloom",
+  "n_head": 16,
+  "n_inner": null,
+  "n_layer": 24,
+  "offset_alibi": 100,
+  "pad_token_id": 3,
+  "pretraining_tp": 1,
+  "skip_bias_add": true,
+  "skip_bias_add_qkv": false,
+  "slow_but_exact": false,
+  "transformers_version": "4.46.1",
+  "unk_token_id": 0,
+  "use_cache": true,
+  "vocab_size": 250880
+}
+
+
+[INFO|2024-11-05 12:13:49] tokenization_utils_base.py:2646 >> tokenizer config file saved in saves/BLOOM-560M/lora/train_2024-11-05-12-11-37/tokenizer_config.json
+
+[INFO|2024-11-05 12:13:49] tokenization_utils_base.py:2655 >> Special tokens file saved in saves/BLOOM-560M/lora/train_2024-11-05-12-11-37/special_tokens_map.json
+
+[WARNING|2024-11-05 12:13:49] logging.py:162 >> No metric eval_loss to plot.
+
+[WARNING|2024-11-05 12:13:49] logging.py:162 >> No metric eval_accuracy to plot.
+
+[INFO|2024-11-05 12:13:49] modelcard.py:449 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Causal Language Modeling', 'type': 'text-generation'}}
+

@@ -624,5 +624,33 @@
       "prompt": "content"
     },
     "folder": "python"
+  },
+  "dafny_train113_alpaca": {
+    "file_name": "dafny_train113_alpaca.json",
+    "formatting": "alpaca",  
+    "columns": {
+      "prompt": "instruction",    
+      "query": "input",        
+      "response": "output",       
+      "system": null,             
+      "history": null      
+    },
+    "ranking": false,
+    "subset": null,
+    "split": "train"
+  },
+  "dafny_test12_alpaca": {
+    "file_name": "dafny_test12_alpaca.json",
+    "formatting": "alpaca",  
+    "columns": {
+      "prompt": "instruction",    
+      "query": "input",        
+      "response": "output",       
+      "system": null,             
+      "history": null      
+    },
+    "ranking": false,
+    "subset": null,
+    "split": "test"
   }
 }
