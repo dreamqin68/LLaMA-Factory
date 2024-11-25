@@ -154,8 +154,8 @@ class Runner:
             plot_loss=True,
             ddp_timeout=180000000,
             include_num_input_tokens_seen=False if is_transformers_version_equal_to_4_46() else True,  # FIXME
-            **json.loads(get("train.extra_args")),
         )
+        args.update(json.loads(get("train.extra_args")))
 
         # checkpoints
         if get("top.checkpoint_path"):
@@ -320,7 +320,7 @@ class Runner:
             if args.get("deepspeed", None) is not None:
                 env["FORCE_TORCHRUN"] = "1"
 
-            self.trainer = Popen(f"llamafactory-cli train {save_cmd(args)}", env=env, shell=True)
+            self.trainer = Popen(["llamafactory-cli", "train", save_cmd(args)], env=env)
             yield from self.monitor()
 
     def _form_config_dict(self, data: Dict["Component", Any]) -> Dict[str, Any]:
