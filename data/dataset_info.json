@@ -650,7 +650,6 @@
       "history": null      
     },
     "ranking": false,
-    "subset": null,
-    "split": "test"
+    "subset": null
   }
 }
